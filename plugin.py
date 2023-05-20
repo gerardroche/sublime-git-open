@@ -21,13 +21,13 @@ class GitOpenCommand(sublime_plugin.WindowCommand):
 
 
 def _get_git_open_cmd(commit: bool, issue: bool) -> str:
-    shell_cmd = ['git-open']
+    cmd = ['git-open']
     if commit:
-        shell_cmd.append('--commit')
+        cmd.append('--commit')
     elif issue:
-        shell_cmd.append('--issue')
+        cmd.append('--issue')
 
-    return ' '.join(shell_cmd)
+    return ' '.join(cmd)
 
 
 def _get_args(view, shell_cmd: str) -> tuple:
