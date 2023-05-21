@@ -6,11 +6,15 @@
     {
         "caption": "Git: Open Commit",
         "command": "git_open",
-        "args": {"commit": true}
+        "args": {
+            "commit": true
+        }
     },
     {
         "caption": "Git: Open Issue",
         "command": "git_open",
-        "args": {"issue": true}
+        "args": {
+            "issue": true
+        }
     }
 ]
