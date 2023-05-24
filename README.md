@@ -18,3 +18,7 @@ Command                         | Description
 **Git&nbsp;Open&nbsp;**         | Open the page for this branch on the repo website
 **Git&nbsp;Open&nbsp;Commit**   | Open the current commit in the repo website
 **Git&nbsp;Open&nbsp;Issue**    | If this branch is named like issue/\#123, this will open the corresponding issue in the repo website
+
+## License
+
+Released under the [GPL-3.0-or-later License](LICENSE).
