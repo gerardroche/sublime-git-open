@@ -6,8 +6,6 @@
 
 ## Installation
 
-**Pending availability in Package Control.**
-
 1. Install [`git-open`](https://github.com/paulirish/git-open).
 2. Install plugin via [Package Control](https://packagecontrol.io/packages/GitOpen).
 
