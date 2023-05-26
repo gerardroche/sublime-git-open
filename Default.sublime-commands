@@ -1,17 +1,17 @@
 [
     {
-        "caption": "Git: Open",
+        "caption": "GitOpen",
         "command": "git_open"
     },
     {
-        "caption": "Git: Open Commit",
+        "caption": "GitOpen: Commit",
         "command": "git_open",
         "args": {
             "commit": true
         }
     },
     {
-        "caption": "Git: Open Issue",
+        "caption": "GitOpen: Issue",
         "command": "git_open",
         "args": {
             "issue": true
