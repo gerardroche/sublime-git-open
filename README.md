@@ -15,6 +15,30 @@ Command                     | Description
 **GitOpen:&nbsp;Commit**    | Open the current commit in the repo website
 **GitOpen:&nbsp;Issue**     | If this branch is named like issue/\#123, this will open the corresponding issue in the repo website
 
+The `git_open` accepts the following arguments:
+
+Argument | Type
+:--------|:-----
+`commit` | `bool`
+`issue` | `bool`
+`remote` | `str`
+`branch` | `str`
+
+Example:
+
+```js
+{
+    "caption": "GitOpen: Upstream",
+    "command": "git_open",
+    "args": {
+        "remote": "upstream",
+        "branch": "master"
+    }
+},
+```
+
+See [git open](https://github.com/paulirish/git-open) for more information.
+
 ## License
 
 Released under the [GPL-3.0-or-later License](LICENSE).

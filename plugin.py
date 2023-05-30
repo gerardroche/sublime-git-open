@@ -24,7 +24,7 @@ import sublime_plugin
 
 class GitOpenCommand(sublime_plugin.WindowCommand):
 
-    def run(self, commit: bool = False, issue: bool = False) -> None:
+    def run(self, commit: bool = False, issue: bool = False, remote: str = '', branch: str = '') -> None:
         view = self.window.active_view()
         if not view:
             return
@@ -33,12 +33,21 @@ class GitOpenCommand(sublime_plugin.WindowCommand):
         if not cwd:
             return
 
-        cmd, shell = _get_args(view, _get_git_open_cmd(commit, issue))
+        git_open_cmd = _get_git_open_cmd(commit, issue, remote, branch)
+
+        cmd, shell = _get_args(view, git_open_cmd)
         subprocess.Popen(cmd, shell=shell, cwd=cwd)
 
 
-def _get_git_open_cmd(commit: bool, issue: bool) -> str:
+def _get_git_open_cmd(commit: bool, issue: bool, remote: str, branch: str) -> str:
     cmd = ['git open']
+
+    if remote:
+        cmd.append(remote)
+
+    if branch:
+        cmd.append(branch)
+
     if commit:
         cmd.append('--commit')
     elif issue:
