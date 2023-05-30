@@ -38,7 +38,7 @@ class GitOpenCommand(sublime_plugin.WindowCommand):
 
 
 def _get_git_open_cmd(commit: bool, issue: bool) -> str:
-    cmd = ['git-open']
+    cmd = ['git open']
     if commit:
         cmd.append('--commit')
     elif issue:
