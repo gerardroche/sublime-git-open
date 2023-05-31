@@ -45,8 +45,8 @@ def _get_git_open_cmd(commit: bool, issue: bool, remote: str, branch: str) -> st
     if remote:
         cmd.append(remote)
 
-    if branch:
-        cmd.append(branch)
+        if branch:
+            cmd.append(branch)
 
     if commit:
         cmd.append('--commit')
