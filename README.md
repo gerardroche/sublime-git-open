@@ -15,7 +15,7 @@ Command                     | Description
 **GitOpen:&nbsp;Commit**    | Open the current commit in the repo website
 **GitOpen:&nbsp;Issue**     | If this branch is named like issue/\#123, this will open the corresponding issue in the repo website
 
-The `git_open` accepts the following arguments:
+The `git_open` command accepts the following arguments:
 
 Argument | Type
 :--------|:-----
