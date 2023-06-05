@@ -37,8 +37,6 @@ Example:
 },
 ```
 
-See [git open](https://github.com/paulirish/git-open) for more information.
-
 ## License
 
 Released under the [GPL-3.0-or-later License](LICENSE).
