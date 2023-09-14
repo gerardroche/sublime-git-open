@@ -37,6 +37,10 @@ Example:
 },
 ```
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 Released under the [GPL-3.0-or-later License](LICENSE).
