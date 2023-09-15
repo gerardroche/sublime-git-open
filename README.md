@@ -37,6 +37,24 @@ Example:
 },
 ```
 
+## NeoVintageous mappings
+
+[NeoVintageous](https://github.com/NeoVintageous/NeoVintageous) is a Vim emulator for Sublime Text.
+
+1. Open the Command Palette: `Command Palette → NeoVintageous: Open neovintageous file`.
+
+2. Add your preferred mappings.
+
+   **Example**
+
+   ```vim
+   nnoremap <leader>oo :GitOpen<CR>
+   nnoremap <leader>oc :GitOpen commit=true<CR>
+   nnoremap <leader>oi :GitOpen issue=true<CR>
+   ```
+
+3. To apply the changes, reload the neovintageousrc from the Command Palette: `Command Palette → NeoVintageous: Reload neovintageous file`.
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
