@@ -1,11 +1,6 @@
-# GitOpen
+# Git Open
 
-[`git-open`](https://github.com/paulirish/git-open) integration for Sublime Text.
-
-## Setup
-
-1. Install [`git-open`](https://github.com/paulirish/git-open).
-2. Install [GitOpen](https://packagecontrol.io/packages/GitOpen) via Package Control.
+A Sublime Text plugin that provides [`git-open`](https://github.com/paulirish/git-open) integration.
 
 ## Commands
 
