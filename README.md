@@ -2,6 +2,16 @@
 
 A Sublime Text plugin that provides [`git-open`](https://github.com/paulirish/git-open) integration.
 
+Installation
+------------
+
+#### Using package control
+
+1. Open up the command palette: <kbd>ctrl+shift+p</kbd> (Linux, Windows) / <kbd>cmd+shift+p</kbd> (macOS)
+2. Search for `Package Control: Install Package`
+3. Search for `Origami`
+4. Hit <kbd>enter</kbd> :wink:
+
 ## Commands
 
 Command                     | Description
