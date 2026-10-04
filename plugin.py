@@ -19,6 +19,7 @@ import os
 import subprocess
 import sys
 
+from sublime import status_message
 import sublime_plugin
 
 
@@ -36,7 +37,10 @@ class GitOpenCommand(sublime_plugin.WindowCommand):
         git_open_cmd = _get_git_open_cmd(commit, issue, remote, branch)
 
         cmd, shell = _get_args(view, git_open_cmd)
-        subprocess.Popen(cmd, shell=shell, cwd=cwd)
+        p = subprocess.Popen(cmd, shell=shell, cwd=cwd)
+        returncode = p.wait()
+        if returncode != 0:
+            status_message('GitOpen: git-open is not installed; see readme')
 
 
 def _get_git_open_cmd(commit: bool, issue: bool, remote: str, branch: str) -> str:
