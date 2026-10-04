@@ -2,6 +2,8 @@
 
 A Sublime Text plugin that provides [`git-open`](https://github.com/paulirish/git-open) integration.
 
+Note: [`git-open`](https://github.com/paulirish/git-open) is a dependency and must be installed separatley for this plugin to work.
+
 ## Commands
 
 Command                     | Description
